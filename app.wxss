@@ -1,0 +1,79 @@
+/**app.wxss**/
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 20rpx 0;
+  box-sizing: border-box;
+  background: 	#D2E9FF;
+} 
+.top{
+  color: red;
+  font: 12px;
+  font-weight: bold;
+  display: flex;  
+  flex-direction: row;  
+  justify-content: center;  
+  padding: 10px;
+    background: 	#D2E9FF;
+}
+
+.question{
+  display: flex;  
+  flex-direction: row;
+  align-items: center; 
+  background-color: #AAAAFF;
+  justify-content: center; 
+  border-radius: 5px;
+  color: white;
+  width: 250px;
+  height: 100px;
+  padding: 5px;
+}
+
+.answer{
+  display: flex;  
+  flex-direction: row;
+  align-items: space-between; 
+  justify-content: center;
+  padding: 20px;
+}
+
+.choseArea{
+  width: 150px;
+  height: 300px;
+}
+
+.inputbox{
+  border: blue;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 3px;
+  padding: 5px;
+  margin: 5px;
+  height: 20px;
+  width: 22px;
+}
+
+.anserbox{
+  border:#5B00AE;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 3px;
+  padding: 3px;
+  margin: 3px;
+  height: 18px;
+  width: 16px;
+}
+
+.row {
+ display: flex;
+ flex-direction: row;
+}
+
+.col{
+  display: flex;
+  flex-direction: column;
+}

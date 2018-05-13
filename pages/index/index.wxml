@@ -1,0 +1,34 @@
+<!--index.wxml-->
+  <view class="top">
+    <text >{{questData.level}}</text>
+    <text bindtap='StartGame' wx:if="{{!isStart}}" >开始游戏</text>
+  </view>
+<view class="container"  wx:if="{{isStart}}">
+  <view class="question"  >
+    <text>{{questData.question}}</text>
+  </view>
+   <view  class="answer" >
+    <view class ="anserbox" style="color:red;" wx:for="{{questData.anserItem}}" wx:for-index="index" wx:for-item="item">
+         <text id = "{{index}}" bindtap='choseA2'>{{useranser[index]}}</text>
+    </view>
+  </view>
+  <view class='choseArea' >
+    <view class='col'>
+         <view class='row'>
+            <view class='inputbox' id = "0" bindtap="choseA" ><text hidden="{{questData.choseItem[0].v}}">{{questData.choseItem[0].t}}</text></view>
+            <view class='inputbox' id = "1" bindtap="choseA" ><text hidden="{{questData.choseItem[1].v}}">{{questData.choseItem[1].t}}</text></view>
+            <view class='inputbox' id = "2" bindtap="choseA" ><text hidden="{{questData.choseItem[2].v}}">{{questData.choseItem[2].t}}</text></view>
+          </view>
+          <view class='row'>
+            <view class='inputbox' id = "3" bindtap="choseA"  ><text hidden="{{questData.choseItem[3].v}}">{{questData.choseItem[3].t}}</text></view>
+            <view class='inputbox' id = "4" bindtap="choseA" ><text hidden="{{questData.choseItem[4].v}}">{{questData.choseItem[4].t}}</text></view>
+            <view class='inputbox' id = "5" bindtap="choseA"><text hidden="{{questData.choseItem[5].v}}">{{questData.choseItem[5].t}}</text></view>
+          </view>
+          <view class='row'>
+            <view class='inputbox' id = "6" bindtap="choseA" ><text hidden="{{questData.choseItem[6].v}}">{{questData.choseItem[6].t}}</text></view>
+            <view class='inputbox' id = "7" bindtap="choseA" ><text hidden="{{questData.choseItem[7].v}}">{{questData.choseItem[7].t}}</text></view>
+            <view class='inputbox' id = "8" bindtap="choseA" ><text hidden="{{questData.choseItem[8].v}}">{{questData.choseItem[8].t}}</text></view>
+          </view>
+    </view>
+  </view>
+</view>
